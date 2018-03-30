@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    >
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/itv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="25dp"
+        android:text="쇼핑 상품 추가"
+        />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iiv1"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:src="@drawable/clothes5"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/itv1"
+        />
+
+    <EditText
+        android:id="@+id/iet1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제조사"
+        android:textSize="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/iiv1"
+        />
+
+    <EditText
+        android:id="@+id/iet2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제품명"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/iet1"
+        />
+
+    <EditText
+        android:id="@+id/iet3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="가격"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:layout_below="@+id/iet2"
+        />
+
+    <EditText
+        android:id="@+id/iet4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="간단한 설명"
+        android:textSize="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/iet3"
+        />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="등록"
+        android:textSize="10dp"
+        android:onClick="onClickedSubmit"
+        android:layout_below="@+id/iet4"
+        />
+
+</RelativeLayout>
